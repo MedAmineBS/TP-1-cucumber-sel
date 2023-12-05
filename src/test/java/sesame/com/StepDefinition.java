@@ -28,7 +28,7 @@ public class StepDefinition {
     public void i_open_google_search_page() {
         firefoxBinary.addCommandLineOptions("--headless");
         firefoxBinary.addCommandLineOptions("--no-sandbox");
-        System.setProperty("webdriver.gecko.driver", "/usr/bin/local/geckodriver");
+        System.setProperty("webdriver.gecko.driver", "/usr/local/bin/geckodriver");
         FirefoxOptions firefoxOptions = new FirefoxOptions();
         firefoxOptions.setBinary(firefoxBinary);
         driver = new FirefoxDriver();
